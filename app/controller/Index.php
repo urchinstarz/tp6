@@ -2,7 +2,8 @@
 namespace app\controller;
 
 use app\BaseController;
-
+use think\facade\Db;
+use think\View;
 class Index extends BaseController
 {
     public function index()
@@ -15,8 +16,12 @@ class Index extends BaseController
         return 'hello,' . $name;
     }
 
-    public function test()
+    public function test(view $view)
     {
-        echo 123;
+        $sql = "select * from `user`";
+        $res = Db::query($sql);
+       $view->assign('res',$res);
+        return $view->fetch();
+//        dump($res);
     }
 }

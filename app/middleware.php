@@ -8,5 +8,5 @@ return [
     // Session初始化
     // 'think\middleware\SessionInit',
     // 页面Trace调试
-    // 'think\middleware\TraceDebug',
+     'think\middleware\TraceDebug',
 ];
