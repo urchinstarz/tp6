@@ -1,4 +1,3 @@
 <?php
-sdjsdkjs
-dsdsds
+echo sdsjkdjskds;
 ?>
