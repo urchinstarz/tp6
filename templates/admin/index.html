@@ -1,0 +1,76 @@
+{include file="/admin/header"/}
+<div class="layui-layout layui-layout-admin">
+    <!--nav start-->
+    {include file="admin/nav"}
+    <!--nav end-->
+
+    <!--sidebar-->
+    {include file="admin/sidebar"}
+    <!--sidebar end-->
+
+    <!--con-->
+    <div class="layui-body">
+        <!-- 内容主体区域 -->
+
+            <div class="layui-col-md12 main-content ">
+                <div class="layui-row grid-demo grid-demo-bg1 layui-col-space5">
+                    <div class="layui-col-md6 layui-col-space5" >
+                        <div class="con-box">
+                            <div class="tit">
+                                个人信息
+                            </div>
+                            <div class="con">
+                                <div class="con-tit">
+                                    您好，xxx,{$root}<br>
+                                    所属角色：<span>超级管理员</span>
+                                </div>
+                                <div class="con-list">
+                                    上次登陆时间：<span>2019-09-12</span> <br>
+                                    上次登陆ip： <span>192.168.0.1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-md6 layui-col-space5" >
+                        <div class="con-box">
+                            <div class="tit">
+                                安全提示
+                            </div>
+                            <div class="con">
+                                建议您将xxxx
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-md6 layui-col-space5" >
+                        <div class="con-box">
+                            <div class="tit">
+                                快捷方式
+                            </div>
+                            <div class="con">
+                                打开。。。 关闭
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-md6 layui-col-space5" >
+                        <div class="con-box">
+                            <div class="tit">
+                                系统信息
+                            </div>
+                            <div class="con">
+                                <ul>
+                                    <li>操作系统： <span>:Mac</span></li>
+                                    <li>服务器： <span>Apache PHP/7.18</span></li>
+                                    <li>MYSQL: <span>5.6.3</span></li>
+                                    <li>上传文件： <span>5.65 MB</span></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!--con end-->
+ <!--footer   -->
+ {include file="admin/footer"}
